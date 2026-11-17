@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+
+    padding: 30px;
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 7px;
+
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+
+    background: #2563eb;
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.error {
+    background: #fee2e2;
+    color: #b91c1c;
+
+    padding: 12px;
+    margin-top: 15px;
+
+    border-radius: 7px;
+}
+
+h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.hasil-wrapper {
+    width: 100%;
+    overflow-x: auto;
+
+    background: #f1f5f9;
+    border-radius: 8px;
+
+    padding: 20px 10px;
+}
+
+.hasil {
+    display: block;
+    width: max-content;
+
+    margin: 0 auto;
+
+    color: #2563eb;
+
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: bold;
+
+    line-height: 1.5;
+    white-space: pre;
+}
+
+/* Tampilan HP */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    .hasil {
+        font-size: 14px;
+    }
+}
